@@ -5,7 +5,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
+import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -15,7 +18,6 @@ public class UserModel {
     private String username;
     private String email;
     private String password;
-    private List<String> followers;
     private List<String> following;
 
 }
