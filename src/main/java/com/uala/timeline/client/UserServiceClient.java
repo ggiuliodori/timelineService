@@ -1,12 +1,17 @@
 package com.uala.timeline.client;
 
 import com.uala.timeline.model.UserModel;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import retrofit2.Call;
 import retrofit2.Response;
 
+import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
+@Slf4j
 @Component
 public class UserServiceClient {
 
@@ -22,13 +27,11 @@ public class UserServiceClient {
             Response<UserModel> response = call.execute();
             if (response.isSuccessful()) {
                 return response.body().getFollowing();
-                // Procesar la respuesta según sea necesario
             } else {
-                // Manejar el error
+                log.error("Get Following error: {}", response.errorBody());
             }
         } catch (Exception e) {
             e.printStackTrace();
-            // Manejar la excepción
         }
         return null;
     }

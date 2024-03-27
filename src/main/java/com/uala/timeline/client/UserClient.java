@@ -1,13 +1,12 @@
 package com.uala.timeline.client;
 
 import com.uala.timeline.model.UserModel;
-import org.springframework.web.bind.annotation.PathVariable;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 
 public interface UserClient {
-    @GET("/api/users/{id}")
+    @GET("api/users/{id}")
     Call<UserModel> getData(@Path("id") String id);
 }
 
