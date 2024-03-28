@@ -1,4 +1,4 @@
-package com.uala.timeline.model;
+package com.uala.timeline.model.api;
 
 import lombok.Data;
 import java.time.LocalDateTime;

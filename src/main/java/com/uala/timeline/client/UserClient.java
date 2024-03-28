@@ -1,6 +1,6 @@
 package com.uala.timeline.client;
 
-import com.uala.timeline.model.UserModel;
+import com.uala.timeline.model.api.UserModel;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;

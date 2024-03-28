@@ -1,10 +1,8 @@
 package com.uala.timeline.service;
 
-import com.mongodb.annotations.Sealed;
 import com.uala.timeline.client.TweetServiceClient;
 import com.uala.timeline.client.UserServiceClient;
-import com.uala.timeline.model.TweetModel;
-import com.uala.timeline.model.UserModel;
+import com.uala.timeline.model.api.TweetModel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

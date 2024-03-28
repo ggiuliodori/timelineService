@@ -1,14 +1,11 @@
-package com.uala.timeline.model;
+package com.uala.timeline.model.api;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Locale;
-import java.util.Set;
+
 
 @Data
 @AllArgsConstructor

@@ -1,15 +1,12 @@
 package com.uala.timeline.client;
 
-import com.uala.timeline.model.UserModel;
+import com.uala.timeline.model.api.UserModel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import retrofit2.Call;
 import retrofit2.Response;
 
-import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 @Slf4j
 @Component

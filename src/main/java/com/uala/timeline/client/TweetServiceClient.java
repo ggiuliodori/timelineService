@@ -1,7 +1,6 @@
 package com.uala.timeline.client;
 
-import com.uala.timeline.model.TweetModel;
-import com.uala.timeline.model.UserModel;
+import com.uala.timeline.model.api.TweetModel;
 import org.springframework.stereotype.Component;
 import retrofit2.Call;
 import retrofit2.Response;
