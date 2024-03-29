@@ -22,7 +22,7 @@ public class TimelineService {
 
     public List<TweetModel> getUsersFollowsAndTweets(String id) {
         List<String> usersId = userServiceClient.getFollowingUsers(id);
-        if (!usersId.isEmpty()) {
+        if (usersId != null) {
             return tweetServiceClient.getTweets(usersId);
         } else {
             log.warn("User with ID: {} does not follow any user", id);
