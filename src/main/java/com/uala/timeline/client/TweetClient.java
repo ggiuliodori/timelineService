@@ -8,7 +8,7 @@ import retrofit2.http.POST;
 import java.util.List;
 
 public interface TweetClient {
-    @POST("/tweets/latest")
+    @POST("/tweet-service/tweets/latest")
     Call<List<TweetModel>> getData(@Body List<String> usersId);
 }
 
